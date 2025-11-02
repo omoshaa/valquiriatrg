@@ -1,235 +1,97 @@
 # 🌿 Portfólio Profissional — Valquiria Telis de Lima
 
-Site de portfólio premium de uma página (landing page) para a terapeuta Valquiria Telis de Lima, especializada em Terapia de Reprocessamento Generativo (TRG).
+Este repositório contém a versão final e publicada do site one-page (landing page) de Valquiria Telis de Lima — terapeuta especializada em Terapia de Reprocessamento Generativo (TRG).
 
-## ✨ Características
+Status: ✅ Trabalho concluído — HTML, CSS e JavaScript premium integrados, conteúdo TRG finalizado, contatos atualizados e pronto para deploy.
 
-### Design Premium
+## O que foi implementado
 
-- 🎨 Paleta de cores sofisticada e calmante
-- 📱 Totalmente responsivo (mobile-first)
-- ✨ Animações suaves e micro-interações
-- 🎭 Gradientes e efeitos visuais modernos
-- 🖼️ Layout em grid profissional
+- Estrutura HTML semântica e otimizada (`index.html`).
+- Design system premium e responsivo (`styles.css`).
+- Interações, animações e comportamentos polidos (`script.js`).
+- Conteúdo editorial completo sobre TRG (texto profissional e educativo).
+- Contatos atualizados e testados: WhatsApp, e-mail e Instagram.
+- Acessibilidade e performance: lazy-loading de imagens, atributos ARIA básicos e animações respeitando preferências de redução de movimento.
 
-### Funcionalidades
+## Principais funcionalidades (já ativas)
 
-- 🧭 Navegação fixa com scroll spy (destaque automático)
-- 📜 Scroll suave entre seções
-- 📝 Formulário de contato com validação
-- 📱 Menu mobile animado
-- ⬆️ Botão "Voltar ao topo"
-- 🎬 Animações on-scroll
-- 🖼️ Lazy loading de imagens
-- 🌊 Efeito parallax sutil
+- Navegação fixa e menu mobile com bloqueio de rolagem ao abrir
+- Scroll suave e scroll-spy (link ativo conforme a seção)
+- Formulário de contato com validação básica e integração opcional pronta
+- Animações on-scroll sutis e micro-interações
+- Gradientes, ícones SVG e sistema tipográfico profissional
+- Botão de voltar ao topo
 
-### Seções
-
-1. **Hero** — Introdução impactante com CTA
-2. **Sobre Mim** — Biografia e credenciais
-3. **O que é TRG** — Explicação detalhada da terapia
-4. **Serviços** — Valores e detalhes das sessões
-5. **Contato** — Formulário + informações + redes sociais
-6. **Footer** — Links úteis e copyright
-
-## 📁 Arquivos
+## Arquivos importantes
 
 ```
-├── index-novo.html      # Estrutura HTML semântica
-├── styles-novo.css      # Design system completo
-├── script-novo.js       # Interações e animações
-└── README-NOVO.md       # Este arquivo
+├── index.html          # Página principal final (versão premium ativada)
+├── styles.css          # Estilos finais e design system
+├── script.js           # Interações, scroll-spy e validações
+├── index-novo.html     # Variante/backup do premium (mantida como histórico)
+├── styles-novo.css     # Variante/backup do premium (mantida como histórico)
+└── script-novo.js      # Variante/backup do premium (mantida como histórico)
 ```
 
-## 🚀 Como Usar
+> Observação: a versão ativa é `index.html` (apontando para `styles.css` e `script.js`). As variantes `*-novo.*` foram preservadas como histórico/backup.
 
-### Opção 1: Abrir diretamente
+## Contatos (já atualizados)
 
-Clique duas vezes em `index-novo.html` para abrir no navegador.
+- WhatsApp: (19) 99816-1689
+- E-mail: kila.com@hotmail.com
+- Instagram: @valquiria.terapeutatrg
 
-### Opção 2: Servidor local (recomendado)
+## Como visualizar localmente (rápido)
 
-**Com Python:**
+1. Abra um terminal na pasta do projeto.
+
+Com Python (recomendado para testes rápidos):
 
 ```powershell
 python -m http.server 8000
-# Acesse: http://localhost:8000/index-novo.html
+# Abra: http://localhost:8000/index.html
 ```
 
-**Com Node.js (npx):**
+Com Node.js (npx serve):
 
 ```powershell
-npx serve
-# Acesse o link fornecido no terminal
+npx serve .
+# Abra o link fornecido pelo serve
 ```
 
-**Com VS Code:**
+Ou use a extensão Live Server do VS Code: clique com o botão direito em `index.html` → "Open with Live Server".
 
-- Instale a extensão "Live Server"
-- Clique direito em `index-novo.html` → "Open with Live Server"
+## Deploy sugerido (passos rápidos)
 
-## 🎨 Personalização
+- Netlify: arraste a pasta para o dashboard ou conecte o repositório GitHub.
+- Vercel: conecte o repositório e publique (deploy automático).
+- GitHub Pages: publique a branch principal e aponte a página para `index.html`.
 
-### 1. Informações de Contato (já atualizadas)
+## Personalização pós-entrega (opcional)
 
-- ✅ WhatsApp: (19) 99816-1689
-- ✅ E-mail: kila.com@hotmail.com
-- ✅ Instagram: @valquiria.terapeutatrg
+- Substituir a foto profissional em `index.html` (tag `<img>` principal).
+- Inserir endereço completo na seção de contato.
+- Configurar um endpoint real para o formulário (Formspree / Netlify Forms / back-end próprio).
+- Ajustar variáveis de cor em `styles.css` se desejar outra paleta.
 
-### 2. Foto Profissional
+## Verificações realizadas
 
-No `index-novo.html`, linha ~98, substitua:
+- [x] HTML semântico e meta tags SEO básicas
+- [x] Tipografia carregada via Google Fonts
+- [x] Teste básico de responsividade (mobile/tablet/desktop)
+- [x] Links de contato verificados (WhatsApp / email / Instagram)
+- [x] Correções de CSS e JS aplicadas (sem erros de sintaxe)
 
-```html
-<img
-  src="https://images.unsplash.com/photo-..."
-  alt="Valquiria Telis de Lima"
-/>
-```
+## Próximos passos (opcionais)
 
-Por:
+1. Integrar formulário a um serviço real (Formspree/Netlify) — se desejar, eu posso configurar.
+2. Fazer otimização final de imagens (compressão/formatos modernos).
+3. Adicionar Google Analytics / Search Console.
 
-```html
-<img src="caminho/para/sua-foto.jpg" alt="Valquiria Telis de Lima" />
-```
+## Suporte
 
-### 3. Endereço
-
-No `index-novo.html`, linha ~244, substitua:
-
-```html
-<p class="contact__info-text">[Insira o endereço completo aqui]</p>
-```
-
-### 4. Cores (se desejar ajustar)
-
-No `styles-novo.css`, linhas 6-13, ajuste as variáveis:
-
-```css
---primary-hue: 168; /* Tom principal */
---primary-sat: 28%; /* Saturação */
---primary-lig: 46%; /* Luminosidade */
-```
-
-### 5. Fontes (se desejar trocar)
-
-No `index-novo.html`, linha 11, troque a URL do Google Fonts.
-No `styles-novo.css`, linhas 27-28, atualize:
-
-```css
---body-font: "Inter", sans-serif;
---title-font: "Playfair Display", serif;
-```
-
-## 🔧 Integrações Opcionais
-
-### Formulário de Contato Real
-
-Por padrão, o formulário redireciona para o WhatsApp após envio. Para integração com back-end:
-
-**Opção 1: Formspree (gratuito)**
-
-1. Crie uma conta em [formspree.io](https://formspree.io)
-2. Obtenha seu endpoint
-3. No `index-novo.html`, adicione ao `<form>`:
-
-```html
-<form action="https://formspree.io/f/SEU-ID" method="POST" ...></form>
-```
-
-**Opção 2: Netlify Forms (gratuito)**
-Se hospedar na Netlify, adicione ao `<form>`:
-
-```html
-<form netlify netlify-honeypot="bot-field" ...></form>
-```
-
-### Google Analytics
-
-Antes do `</head>` em `index-novo.html`:
-
-```html
-<!-- Google Analytics -->
-<script
-  async
-  src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXX"
-></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag() {
-    dataLayer.push(arguments);
-  }
-  gtag("js", new Date());
-  gtag("config", "G-XXXXXXX");
-</script>
-```
-
-### Favicon
-
-Antes do `</head>`:
-
-```html
-<link rel="icon" type="image/png" href="favicon.png" />
-```
-
-## 🌐 Deploy (Hospedagem Gratuita)
-
-### Netlify (Recomendado)
-
-1. Crie conta em [netlify.com](https://netlify.com)
-2. Arraste a pasta do projeto para o dashboard
-3. Pronto! Seu site está no ar
-
-### Vercel
-
-1. Crie conta em [vercel.com](https://vercel.com)
-2. Conecte seu repositório GitHub ou faça upload
-3. Deploy automático
-
-### GitHub Pages
-
-1. Crie repositório no GitHub
-2. Faça upload dos arquivos
-3. Vá em Settings → Pages → Source: main branch
-4. Acesse: `https://seu-usuario.github.io/nome-repo/index-novo.html`
-
-## 📱 Compatibilidade
-
-- ✅ Chrome (recomendado)
-- ✅ Firefox
-- ✅ Safari
-- ✅ Edge
-- ✅ Dispositivos móveis (iOS/Android)
-
-## 🎯 Performance
-
-- ⚡ Carregamento rápido
-- 🖼️ Lazy loading de imagens
-- 📦 CSS otimizado
-- 🚀 JavaScript minificável
-
-## 📝 Próximos Passos Sugeridos
-
-1. ✅ Adicionar foto profissional real
-2. ✅ Preencher endereço completo
-3. ⚙️ Configurar integração de formulário (Formspree/Netlify)
-4. 🌐 Fazer deploy em plataforma de hospedagem
-5. 📊 Adicionar Google Analytics
-6. 🎨 Adicionar favicon personalizado
-7. 🔍 Otimizar meta tags para SEO
-8. 📸 Otimizar imagens (compressão)
-
-## 🆘 Suporte
-
-Se precisar de ajuda para:
-
-- Configurar o formulário de contato
-- Fazer deploy do site
-- Ajustar cores ou layout
-- Adicionar novas funcionalidades
-
-Basta me pedir! 😊
+Se quiser que eu realize qualquer passo opcional (deploy + configuração de formulário + analytics), diga qual opção prefere e eu aplico as mudanças diretamente.
 
 ---
 
-**Desenvolvido com ❤️ e atenção aos detalhes.**
+**Feito com cuidado e pronto para apresentar.**
